@@ -1,0 +1,6 @@
+{
+  "workbench.statusBar.visible": true,
+  "python.analysis.extraPaths": [
+    "./mysite"
+  ]
+}
