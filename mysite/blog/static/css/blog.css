@@ -100,10 +100,11 @@ input[type=submit] {
 /* comments */
 .comment {
   padding: 10px;
+  background-color: #00abff;
 }
 
 .comment:nth-child(even) {
-  background: #efefef;
+  background: lightseagreen;
 }
 
 .comment .info {
