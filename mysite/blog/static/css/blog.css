@@ -4,6 +4,8 @@ body {
   font-family: helvetica, sans-serif;
   background-color: #111;
   color: whitesmoke;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 a {
@@ -37,16 +39,58 @@ h2 {
 
 #content {
   float: left;
-  width: 60%;
+  width: 70%;
   padding: 0 0 0 30px;
 }
 
 #sidebar {
   float: right;
-  width: 30%;
-  padding: 10px;
-  background: seagreen;
-  height: 100%;
+  width: 20%;
+  background: rgba(46, 139, 86, 0.176);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar > * {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#sidebar > *:nth-child(even) {
+  background: rgba(84, 83, 83, 0.19);
+}
+
+#sidebar >  a {
+  color: white;
+  background-color: seagreen;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+#sidebar a:hover {
+  color: white;
+  background-color: lightseagreen;
+}
+
+.similar-posts {
+  border-top: 2px solid yellow;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+  border-bottom: 2px solid yellow;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 p.date {
